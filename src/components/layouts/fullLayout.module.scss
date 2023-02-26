@@ -1,0 +1,11 @@
+@import "../../theme/colors.scss";
+@import "../../theme/fonts.scss";
+*{
+    box-sizing:border-box;
+}
+.mainFrame{
+    display:flex;
+    width:100%;
+    background:$darkGray;
+    height:100%;
+}

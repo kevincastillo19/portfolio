@@ -1,0 +1,45 @@
+// only use for navbar styles
+@import '../../theme/colors.scss';
+
+.nav{
+    width: 100%;
+    background-color: $darkGray;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.nav .logo {
+    max-width: 76px;
+    margin-left:10rem;
+    padding:0.5rem;
+}
+.nav .menuOptions{
+    display:flex;
+    justify-content:space-between;
+    
+}
+.nav .menuOptions a > span {
+    padding:1rem;
+    color:$white;
+    font-weight:500;
+    text-decoration:none;
+    text-transform:uppercase;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.nav .menuOptions a > span::before{
+    position: absolute;
+    content: attr(data-content); /* Prints the value of the attribute */
+    color:$primaryColor;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 275ms ease;    
+}
+.nav .menuOptions a > span:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.nav .menuOptions a span:hover{
+    color:transparent;
+    transition: clip-path 0.2s ease;    
+}
