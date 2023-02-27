@@ -1,0 +1,25 @@
+@import "../../theme/colors.scss";
+
+.container{    
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.graySquare{    
+    width: 100%;
+    max-height: 1016px;
+    height: 63.5rem;
+    background-color: $secondGray;
+}
+.blackSquare{
+    width: 100%;
+    max-height: 1016px;
+    height: 63.5rem;
+}
+
+.cardsFrame{
+    position: absolute;
+    top:6.25rem;
+    left:25rem;
+}

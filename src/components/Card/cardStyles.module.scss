@@ -1,0 +1,42 @@
+@import "../../theme/colors.scss";
+@import "../../theme/fonts.scss";
+
+
+.card-gray{
+    background: $darkGray;
+    color:$white;
+}
+
+.cardIcon{
+    max-width: 4.9rem;
+    padding:1rem 0;
+}
+
+.cardContainer{
+    max-width:361px;
+    max-height: 382px;
+    padding:5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+.cardButton-gray {    
+    text-transform: uppercase;
+    background: none;
+    border:none;
+}
+
+.cardButton-gray span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 188.9%;
+    /* or 30px */
+    letter-spacing: 0.13em;
+    color:$primaryColor;
+    vertical-align: middle;
+}
+
+.buttonIcon-gray{
+    vertical-align: middle;
+}
