@@ -1,3 +1,4 @@
+@import "./colors.scss";
 
 h1,p,span,button,ul,li,input{
     font-family: 'Montserrat', sans-serif;
@@ -7,26 +8,33 @@ h1,p,span,button,ul,li,input{
     font-weight: bold;
     letter-spacing: 7%;
     line-height: 58.51px;
+    color:$white;
+    margin:0;
+    padding:0;
 }
-.subtitle-white{
+.subtitleWhite{
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
     letter-spacing: 0.07em;
 }
-.title-label{
+.titleLabel{
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.07em;
+    color:$white;
+    margin:0;
+    padding:0;
 }
 .caption{
     font-weight: 400;
     font-size: 16px;
     line-height: 19.5px;
     letter-spacing: 7%;
+    color:$white;
 }
 
 
