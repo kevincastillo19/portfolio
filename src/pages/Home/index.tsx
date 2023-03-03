@@ -1,9 +1,12 @@
 import { Feed } from '../../components/Feed'
+import { Card } from '../../components/Card'
+import { CardSquare } from '../../components/CardSquare'
+import { Badge } from '../../components/Badge'
 import styles from './homeStyles.module.scss'
-import { Card } from '../../components/Card/index'
 import laptopIcon from '../../assets/img/icons/laptop-icon.svg'
 import tabletIcon from '../../assets/img/icons/tablet-icon.svg'
 import ruleIcon from '../../assets/img/icons/rule-icon.svg'
+
 export const Home = () => {
     const CAPTION_TEXT =
         "I'm a System engineer with more than three years of experience in Software development, currently I'm working as a Fullstack developer. In addition to this, I have experience in the graphic design area, such as Design UX/UI and others."
@@ -18,7 +21,7 @@ export const Home = () => {
             <section id="about" className={styles.container}>
                 <div className={styles.graySquare} />
                 <div className={styles.blackSquare} />
-                <div className={styles.cardsFrame}>
+                <article className={styles.cardsFrame}>
                   <Card
                       icon={laptopIcon}
                       color="gray"
@@ -43,7 +46,35 @@ export const Home = () => {
                       buttonText='Know more'
                       buttonAction={()=> console.log("know more branding")}
                   />
+                </article>
+                <article className={styles.badgesFrame}>
+                    <CardSquare
+                        bigText={"3+"}
+                        label={"Years Experience"}
+                    />
+                <div className={styles.badgeRectangle}>
+                    <div className={styles.badgeRow}>
+                        <Badge
+                            bigText={"6"}
+                            label={"Clients"}
+                        />
+                        <Badge
+                            bigText={"10+"}
+                            label={"Technologies"}
+                        />
+                    </div>
+                    <div className={styles.badgeRow}>
+                        <Badge
+                            bigText={"12+"}
+                            label={"Completed projects"}
+                        />
+                        <Badge
+                            bigText={"16+"}
+                            label={"Achievements"}
+                        />
+                    </div>
                 </div>
+                </article>
             </section>
         </>
     )
