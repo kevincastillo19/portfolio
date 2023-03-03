@@ -13,6 +13,12 @@
     height:8.5rem;
 }
 
+.badgeContainer:hover{
+    box-shadow: 0px 0px 20px 1px $primaryColorTenue;
+    transition: all .5s ease-in-out;
+    cursor:pointer;
+}
+
 .badgeContainer .badgeBigText{
     font-family: 'Montserrat';
     font-style: normal;
@@ -23,6 +29,7 @@
     text-align: center; 
     color:$primaryColor;
     margin:0;
+    
 }
 .badgeContainer .badgeLabel{
     font-family: 'Montserrat';
@@ -34,3 +41,4 @@
     color: $white;
     margin:0;
 }
+
