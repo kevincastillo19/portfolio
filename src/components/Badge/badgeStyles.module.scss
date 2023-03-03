@@ -1,0 +1,36 @@
+@import '../../theme/colors.scss';
+
+.badgeContainer{
+    padding:0 3rem;
+    background:$primaryGray;
+    max-width:361px;
+    max-height:137px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    width:22.5rem;
+    height:8.5rem;
+}
+
+.badgeContainer .badgeBigText{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    /* identical to box height */
+    text-align: center; 
+    color:$primaryColor;
+    margin:0;
+}
+.badgeContainer .badgeLabel{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    color: $white;
+    margin:0;
+}
