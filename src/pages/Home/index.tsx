@@ -76,6 +76,12 @@ export const Home = () => {
                 </div>
                 </article>
             </section>
+            <section id='featuredProjects' className={styles.featuredProjects}>
+                <div className={styles.featuredTitle}>
+                    <h2 className={"subtitleWhite"}>FEATURED PROJECTS</h2>
+                    <button className={'button-primary'}>view all</button>
+                </div>
+            </section>
         </>
     )
 }
