@@ -1,7 +1,8 @@
 import { Navbar } from "../Navbar";
 import { navbarOptions } from "../Navbar/navbarActions";
-import {Footer} from "../Footer"
 import styles from "./fullLayout.module.scss"
+// import {Footer} from "../Footer"
+
 type props = {
     children: JSX.Element
 }
@@ -11,7 +12,8 @@ export const FullLayout = ({children}:props) => {
     <div className={styles.mainFrame}>
       <Navbar image={navbarOptions.image} options={navbarOptions.options} />
       {children}
-      <Footer/>
+      <Navbar options={navbarOptions.options} />
+      {/* <Footer/> */}
     </div>
   );
 };

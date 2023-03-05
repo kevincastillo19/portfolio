@@ -8,6 +8,11 @@
     align-items:center;
     justify-content:space-between;
 }
+.navCentered{
+    @extend .nav;
+    justify-content:center;
+    padding: 3rem 0;
+}
 .nav .logo {
     max-width: 76px;
     margin-left:20rem;

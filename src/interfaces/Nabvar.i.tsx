@@ -1,5 +1,5 @@
 export interface NavbarInterface {
-    image:string,
+    image?:string,
     options:NavItem[]
 }
 

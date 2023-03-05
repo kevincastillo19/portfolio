@@ -8,6 +8,7 @@ import tabletIcon from '../../assets/img/icons/tablet-icon.svg'
 import ruleIcon from '../../assets/img/icons/rule-icon.svg'
 import { Slide } from '../../components/Slide/index';
 import { ImageProject } from '../../utils/ImageProject';
+import { Banner } from '../../components/Banner'
 
 export const Home = () => {
     const CAPTION_TEXT =
@@ -109,6 +110,14 @@ export const Home = () => {
                         buttonAction={()=> console.log("vpocket")}
                     />
                 </article>
+            </section>
+            <section id="contact" className={styles.contactBanner}>
+                <Banner 
+                    title='Let’s work together on yout next project'
+                    caption='Get in touch to start working together and develop this new business idea.'
+                    buttonText='contact'
+                    buttonAction={()=>console.log("contact")}
+                />
             </section>
         </>
     )

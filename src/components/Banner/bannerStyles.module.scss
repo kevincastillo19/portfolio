@@ -1,0 +1,17 @@
+@import '../../theme/colors.scss';
+
+.bannerContainer{
+    display: flex;
+    background-color: $primaryGray;
+    justify-content: space-around;
+    width: 100%;
+    height: 21.18rem;
+    align-items: center;
+}
+.textColumn{
+    flex:2;
+    padding: 5rem;
+}
+.buttonColumn{
+    flex:1;
+}

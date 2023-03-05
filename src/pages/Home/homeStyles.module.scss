@@ -52,6 +52,7 @@
 .featuredProjects{
     margin: 5rem auto;
     width: 77%;
+    position: relative;
 }
 .featuredTitle{
     display:flex;
@@ -62,8 +63,12 @@
 .featuredProjects .projects{
     display:flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 .featuredProjects .projects > *{
     margin-bottom: 2rem;
+}
+.contactBanner{
+    width: 77%;
+    margin: auto;
 }
