@@ -1,3 +1,71 @@
 @import '../../theme/colors.scss';
 @import '../../theme/buttons.scss';
 @import '../../theme/fonts.scss';
+
+.slideContainer {
+    max-width: 530px;
+    max-height: 526px;
+}
+
+.slideContainer .slideSquare{
+    background:$primaryGray;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.slideContainer .slideSquare:hover{
+    cursor: pointer;
+}
+.slideContainer .slideSquare .slideImage {
+    max-width: 462px;
+    max-height: 260px;
+    margin: 3.5rem 0;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.slideContainer .titleLabel { margin-top:1rem; }
+.slideContainer .buttonAction {
+    background:transparent;
+    border: none; 
+    color: $primaryColor;
+}
+
+.cardButtonText {
+    text-transform: uppercase;
+    background: none;
+    border:none;
+    text-align: left;
+    padding: 0;
+}
+
+.cardButton-gray span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 188.9%;
+    /* or 30px */
+    letter-spacing: 0.13em;
+    color:$primaryColor;
+    vertical-align: middle;
+}
+
+.buttonIcon-gray{
+    vertical-align: middle;
+}
+
+.cardButton-primary span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 188.9%;
+    /* or 30px */
+    letter-spacing: 0.13em;
+    color:$white;
+    vertical-align: middle;
+}
+
+.buttonIcon-primary{
+    vertical-align: middle;
+    filter:brightness(100);
+}

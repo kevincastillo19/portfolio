@@ -6,6 +6,8 @@ import styles from './homeStyles.module.scss'
 import laptopIcon from '../../assets/img/icons/laptop-icon.svg'
 import tabletIcon from '../../assets/img/icons/tablet-icon.svg'
 import ruleIcon from '../../assets/img/icons/rule-icon.svg'
+import { Slide } from '../../components/Slide/index';
+import { ImageProject } from '../../utils/ImageProject';
 
 export const Home = () => {
     const CAPTION_TEXT =
@@ -81,6 +83,14 @@ export const Home = () => {
                     <h2 className={"subtitleWhite"}>FEATURED PROJECTS</h2>
                     <button className={'button-primary'}>view all</button>
                 </div>
+                <article id="projects">
+                    <Slide
+                        image={ImageProject('biowel')}
+                        title="Biowel ERP"
+                        buttonText='KNOW MORE'
+                        buttonAction={()=> console.log("biowel")}
+                    />
+                </article>
             </section>
         </>
     )
