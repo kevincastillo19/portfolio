@@ -2,15 +2,23 @@ import '../../theme/buttons.scss';
 type props = {
     text:string,
     action?:()=>void,
-    type:string
+    type:'primary' | 'gray',
+    icon?:string
 }
-export const Button = ({text, action, type}:props) => {
+export const Button = ({text, action, type, icon}:props) => {
     return (
         <button
             className={`button-${type}`}
             onClick={action}
         >
-            {text}
+            <span>{text}</span>
+            {icon && (
+                <img
+                    src={icon}
+                    alt={text}
+                    className={`buttonIcon-${type}`}
+                />
+            )}
         </button>
     )
 }

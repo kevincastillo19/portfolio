@@ -1,6 +1,7 @@
 
 import buttonArrow from '../../assets/img/icons/button-arrow.svg'
 import styles from './slideStyle.module.scss';
+import { Button } from '../Buttons/Button';
 
 type props = {
     image:string,
@@ -16,19 +17,12 @@ export const Slide = ({image, title, buttonText, buttonAction}: props) => {
         <img src={image} alt={title} className={styles.slideImage} />        
       </div>
         <h3 className={styles.titleLabel}>{title}</h3>
-        {buttonText && (
-                <button
-                    className={`${styles.cardButtonText} ${styles['cardButton-gray']}`}
-                    onClick={() => buttonAction}
-                >
-                    <span>{buttonText}</span>
-                    <img
-                        src={buttonArrow}
-                        alt={buttonText}
-                        className={`${styles['buttonIcon-gray']}`}
-                    />
-                </button>
-          )}
+        <Button
+          text={buttonText}
+          type="gray"
+          icon={buttonArrow}
+          action={buttonAction}
+        />
     </div>
   )
 }

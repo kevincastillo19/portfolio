@@ -83,12 +83,30 @@ export const Home = () => {
                     <h2 className={"subtitleWhite"}>FEATURED PROJECTS</h2>
                     <button className={'button-primary'}>view all</button>
                 </div>
-                <article id="projects">
+                <article id="projects" className={styles.projects}>
                     <Slide
                         image={ImageProject('biowel')}
                         title="Biowel ERP"
                         buttonText='KNOW MORE'
                         buttonAction={()=> console.log("biowel")}
+                    />
+                    <Slide
+                        image={ImageProject('smarket')}
+                        title="Smarket"
+                        buttonText='KNOW MORE'
+                        buttonAction={()=> console.log("smarket")}
+                    />
+                    <Slide
+                        image={ImageProject('laguaca')}
+                        title="La Guaca"
+                        buttonText='KNOW MORE'
+                        buttonAction={()=> console.log("guaca")}
+                    />
+                    <Slide
+                        image={ImageProject('vpocket')}
+                        title="VPOCKET"
+                        buttonText='KNOW MORE'
+                        buttonAction={()=> console.log("vpocket")}
                     />
                 </article>
             </section>
