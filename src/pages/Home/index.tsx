@@ -2,7 +2,7 @@ import { Feed } from '../../components/Feed'
 import { Card } from '../../components/Card'
 import { CardSquare } from '../../components/CardSquare'
 import { Badge } from '../../components/Badge'
-import styles from './homeStyles.module.scss'
+import styles from './_home.module.scss'
 import laptopIcon from '../../assets/img/icons/laptop-icon.svg'
 import tabletIcon from '../../assets/img/icons/tablet-icon.svg'
 import ruleIcon from '../../assets/img/icons/rule-icon.svg'
@@ -111,6 +111,7 @@ export const Home = () => {
                     />
                 </article>
             </section>
+            <div className={styles.grayRectangle}></div>
             <section id="contact" className={styles.contactBanner}>
                 <Banner 
                     title='Let’s work together on yout next project'

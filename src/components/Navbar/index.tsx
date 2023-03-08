@@ -1,4 +1,4 @@
-import { NavbarInterface } from "../../interfaces/Nabvar.i"
+import { NavbarInterface } from "../../interfaces/Nabvar.d"
 import navbarStyles from "./navbar.module.scss"
 import {Link} from "react-router-dom"
 

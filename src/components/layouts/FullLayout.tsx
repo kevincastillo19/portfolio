@@ -1,6 +1,6 @@
 import { Navbar } from "../Navbar";
 import { navbarOptions } from "../Navbar/navbarActions";
-import styles from "./fullLayout.module.scss"
+import styles from "./_fullLayout.module.scss"
 // import {Footer} from "../Footer"
 
 type props = {

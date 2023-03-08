@@ -72,3 +72,12 @@
     width: 77%;
     margin: auto;
 }
+.grayRectangle{
+    width: 100%;
+    background-color:  $secondGray;
+    height:37rem;
+    position:absolute;
+    bottom:10%;
+    left:0;
+    z-index: -1;
+}
