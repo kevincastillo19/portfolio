@@ -1,11 +1,15 @@
 @import "../../theme/colors.scss";
 @import "../../theme/fonts.scss";
+@import "../../theme/breakpoints.scss";
 
 .container{
     padding:5rem;
     display:flex;
     background:$darkGray;
     justify-content:center;
+    @include media("<=tablet"){
+        padding:3rem;
+    }
 }
 .data{
     display:flex;
@@ -15,4 +19,8 @@
     max-width:573px;
     max-height:272px;
     margin-left:25rem;
+    @include media("<=tablet"){
+        // margin-left:0rem;
+        margin:auto;
+    }
 }

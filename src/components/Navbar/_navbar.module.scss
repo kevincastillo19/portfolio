@@ -1,27 +1,27 @@
 // only use for navbar styles
 @import '../../theme/colors.scss';
+// @import '../../theme/breakpoints.scss';
 
-.nav{
+.nav{    
     width: 100%;
-    background-color: $darkGray;
+    padding:1rem 0;
+    margin:auto;
     display:flex;
+    flex-wrap: wrap;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    background-color: $darkGray;
 }
 .navCentered{
     @extend .nav;
     justify-content:center;
-    padding: 3rem 0;
 }
 .nav .logo {
     max-width: 76px;
-    margin-left:20rem;
-    padding:1rem;
 }
 .nav .menuOptions{
     display:flex;
     justify-content:space-between;
-    padding-right:10rem;
 }
 .nav .menuOptions a > span {
     padding:1rem;
@@ -39,7 +39,9 @@
     content: attr(data-content); /* Prints the value of the attribute */
     color:$primaryColor;
     clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-    transition: clip-path 0.2s ease;    
+    transition: clip-path 0.2s ease;
+    left:0;
+    top:0;
 }
 .nav .menuOptions a > span:hover::before{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

@@ -1,6 +1,6 @@
 
 import buttonArrow from '../../assets/img/icons/button-arrow.svg'
-import styles from './slideStyle.module.scss';
+import styles from './_slide.module.scss';
 import { Button } from '../Buttons/Button';
 
 type props = {

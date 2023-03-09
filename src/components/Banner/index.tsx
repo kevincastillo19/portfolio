@@ -1,4 +1,4 @@
-import styles from './bannerStyles.module.scss'
+import styles from './_banner.module.scss'
 
 type props = {
     title: string

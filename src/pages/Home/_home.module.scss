@@ -1,10 +1,15 @@
 @import "../../theme/colors.scss";
 @import "../../theme/fonts.scss";
+@import "../../theme/breakpoints.scss";
 
 .container{    
     width: 100%;
     display: flex;
     position: relative;
+    @include media("<=tablet"){
+        flex-direction: column;
+        margin-top: 5rem;
+    }
 }
 
 .graySquare{    
@@ -12,11 +17,18 @@
     max-height: 1016px;
     height: 63.5rem;
     background-color: $secondGray;
+    z-index: -1;
+    @include media("<=tablet"){
+        display:none;
+    }
 }
 .blackSquare{
     width: 100%;
     max-height: 1016px;
     height: 63.5rem;
+    @include media("<=tablet"){
+        display:none;
+    }
 }
 
 .cardsFrame{
@@ -25,6 +37,11 @@
     position: absolute;
     top:6.25rem;
     left:12.1875rem;
+    @include media("<=tablet"){
+        flex-wrap: wrap;
+        position:initial;
+        justify-content: center;
+    }
 }
 .cardsFrame > * { margin:1.5rem;}
 .badgesFrame{
@@ -34,14 +51,30 @@
     bottom:4rem;
     left:12.1875rem;
     margin-top:7.5rem;
+    @include media("<=tablet"){
+        margin: auto;
+        flex-wrap: wrap;
+        position:initial;
+        justify-content: center;
+    }
 }
-.badgesFrame > * { margin-left:1.5rem; }
+.badgesFrame > * { 
+    margin-left:1.5rem;
+    @include media("<=tablet"){
+        margin: auto;
+    }
+}
 
 .badgeRectangle{
     display:flex;
     flex-direction:column;
 }
-.badgeRectangle > * { margin:1.5rem; }
+.badgeRectangle > * {
+    margin:1.5rem;
+    @include media("<=tablet"){
+        margin: auto;
+    }
+}
 
 .badgeRow{
     display:flex;
@@ -53,6 +86,9 @@
     margin: 5rem auto;
     width: 77%;
     position: relative;
+    @include media("<=tablet"){
+        // margin: auto;
+    }
 }
 .featuredTitle{
     display:flex;
@@ -63,7 +99,7 @@
 .featuredProjects .projects{
     display:flex;
     justify-content: space-between;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
 .featuredProjects .projects > *{
     margin-bottom: 2rem;
@@ -71,7 +107,11 @@
 .contactBanner{
     width: 77%;
     margin: auto;
+    @include media("<=tablet"){
+        width: 90%;
+    }
 }
+
 .grayRectangle{
     width: 100%;
     background-color:  $secondGray;

@@ -1,26 +1,27 @@
 import { NavbarInterface } from "../../interfaces/Nabvar.d"
-import navbarStyles from "./navbar.module.scss"
+import styles from "./_navbar.module.scss"
 import {Link} from "react-router-dom"
 
 export const Navbar = ({image, options}:NavbarInterface) => {
 
   return (
-    <nav className={`${navbarStyles.nav} ${image ? '' : navbarStyles.navCentered}`}>
+    <nav className={`${styles.nav} ${image ? '' : styles.navCentered}`}>
         {image && (
             <div>
                 <Link to="/">
-                    <img src={image} alt="logo" width={100} className={navbarStyles.logo}/>
+                    <img src={image} alt="logo" width={100} className={styles.logo}/>
                 </Link>
             </div>
         )}
-        <div className={navbarStyles.menuOptions}>
+        <div className={styles.menuOptions}>
             {
                 options.map(option => (
-                    <Link to={option.url}>
+                    <Link to={option.url} key={option.url}>
                         <span data-content={option.name}>{option.name}</span>
                     </Link>
                 ))
             }
+            <i className={`fa fa-bars`} aria-hidden="true"></i>
         </div>
     </nav>
   )

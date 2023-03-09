@@ -1,4 +1,4 @@
-import styles from './cardSquare.module.scss';
+import styles from './_cardSquare.module.scss';
 
 type props ={
     bigText:string,

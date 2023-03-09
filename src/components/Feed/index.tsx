@@ -1,5 +1,5 @@
 import { Button } from "../Buttons/Button";
-import styles from "./feedStyles.module.scss";
+import styles from "./_feed.module.scss";
 type props = {
   title: string;
   caption: string;

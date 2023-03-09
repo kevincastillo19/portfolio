@@ -1,4 +1,5 @@
 @import '../../theme/colors.scss';
+@import '../../theme/breakpoints.scss';
 
 .bannerContainer{
     display: flex;
@@ -7,6 +8,12 @@
     width: 100%;
     height: 21.18rem;
     align-items: center;
+    box-sizing: border-box;
+    @include media ("<=tablet"){
+        flex-wrap: wrap;
+        padding: 1rem;
+        height: auto;
+    }
 }
 .textColumn{
     flex:2;
