@@ -23,12 +23,13 @@
 .slideContainer .slideSquare .slideImage {
     // max-width: 462px;
     // max-height: 260px;
+    width: 100%;
     margin: 3.5rem 1.5rem;
     position: relative;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    @include media("<=tablet"){
-        width: 100%;
-    }
+    // @include media("<=tablet"){
+    //     width: 100%;
+    // }
 }
 
 .slideContainer .titleLabel { margin-top:1rem; }

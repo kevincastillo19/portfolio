@@ -74,7 +74,6 @@
 }
 .badgeRectangle > * {
     margin:1rem;
-    margin-top:0;
     @include media("<=tablet"){
         margin: auto;
     }
@@ -91,7 +90,7 @@
 
 .featuredProjects{
     margin: 5rem auto;
-    width: 77%;
+    width: 60%;
     position: relative;
     @include media("<=tablet"){
         // margin: auto;
@@ -118,7 +117,7 @@
     margin-bottom: 2rem;
 }
 .contactBanner{
-    width: 77%;
+    width: 60%;
     margin: auto;
     @include media("<=tablet"){
         width: 90%;
