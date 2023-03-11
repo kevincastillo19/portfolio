@@ -9,6 +9,7 @@
     height: 21.18rem;
     align-items: center;
     box-sizing: border-box;
+    padding: 3rem;
     @include media ("<=tablet"){
         flex-wrap: wrap;
         padding: 1rem;

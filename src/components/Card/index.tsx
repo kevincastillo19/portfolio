@@ -1,4 +1,4 @@
-import styles from './cardStyles.module.scss'
+import styles from './_card.module.scss'
 import buttonArrow from '../../assets/img/icons/button-arrow.svg'
 type props = {
     icon: string

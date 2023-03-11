@@ -2,6 +2,7 @@
 @import "../../theme/breakpoints.scss";
 
 .cardSquareContainer{
+    box-sizing: border-box;
     max-width:360px;
     max-height:294px;
     padding: 0rem 3rem;
