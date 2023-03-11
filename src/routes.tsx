@@ -7,7 +7,6 @@ export const router = createBrowserRouter([
         path:"/",
         element:(
             <FullLayout>
-                {/* <>div</> */}
                 <Home/>
             </FullLayout>
         )

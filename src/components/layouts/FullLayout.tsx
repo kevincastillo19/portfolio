@@ -11,7 +11,7 @@ export const FullLayout = ({children}:props) => {
   return (
     <div className={styles.mainFrame}>
       <Navbar image={navbarOptions.image} options={navbarOptions.options} />
-      {children}
+        {children}
       <Navbar options={navbarOptions.options} />
       {/* <Footer/> */}
     </div>

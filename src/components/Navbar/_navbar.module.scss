@@ -43,8 +43,7 @@
     color:$primaryColor;
     clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
     transition: clip-path 0.2s ease;
-    left:0;
-    top:0;
+    margin: auto;
 }
 .nav .menuOptions a > span:hover::before{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -52,4 +51,5 @@
 .nav .menuOptions a span:hover{
     color:transparent;
     transition: clip-path 0.2s ease;    
+    cursor:pointer;
 }
