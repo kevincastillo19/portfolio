@@ -16,6 +16,15 @@
         height: auto;
     }
 }
+
+.bannerContainer h2{
+    @include media('<=phone'){
+        font-size: 2rem;
+        letter-spacing: 0.05rem;
+        line-height: 2rem;
+    }
+}
+
 .textColumn{
     flex:2;
     padding: 5rem;

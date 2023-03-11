@@ -67,12 +67,19 @@
 .badgeRectangle{
     display:flex;
     flex-direction:column;
+    @include media("<=phone"){
+        width: 90%;
+        box-sizing: border-box;
+    }
 }
 .badgeRectangle > * {
     margin:1rem;
     margin-top:0;
     @include media("<=tablet"){
         margin: auto;
+    }
+    @include media("<=phone"){
+        margin-top: 1rem;
     }
 }
 
@@ -95,6 +102,12 @@
     justify-content: space-between;
     margin-bottom:5rem;
     align-items: center;
+
+}
+.featuredTitle > h2{
+    @include media ('<=phone'){
+        font-size:1.5rem;
+    }
 }
 .featuredProjects .projects{
     display:flex;

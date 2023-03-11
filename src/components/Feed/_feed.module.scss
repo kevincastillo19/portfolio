@@ -10,6 +10,9 @@
     @include media("<=tablet"){
         padding:3rem;
     }
+    @include media("<=phone"){
+        padding:0rem;
+    }
 }
 .data{
     display:flex;

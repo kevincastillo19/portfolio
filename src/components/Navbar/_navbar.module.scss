@@ -1,6 +1,6 @@
 // only use for navbar styles
 @import '../../theme/colors.scss';
-// @import '../../theme/breakpoints.scss';
+@import '../../theme/breakpoints.scss';
 
 .nav{    
     width: 100%;
@@ -32,6 +32,9 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
+    @include media ("<=phone"){
+        font-size: 12px;
+    }
 }
 
 .nav .menuOptions a > span::before{
