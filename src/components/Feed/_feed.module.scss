@@ -3,7 +3,7 @@
 @import "../../theme/breakpoints.scss";
 
 .container{
-    padding:5rem;
+    padding-top:5rem;
     display:flex;
     background:$darkGray;
     justify-content:center;
@@ -15,13 +15,13 @@
     }
 }
 .data{
+    align-self: center;
     display:flex;
     flex-direction:column;
     text-align:justify;
     padding:1rem;
     max-width:573px;
     max-height:272px;
-    margin-left:25rem;
     @include media("<=tablet"){
         // margin-left:0rem;
         margin:auto;
