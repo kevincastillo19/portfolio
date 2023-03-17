@@ -9,6 +9,7 @@
     justify-content:center;
     @include media("<=tablet"){
         padding:3rem;
+        flex-direction: column;
     }
     @include media("<=phone"){
         padding:0rem;
@@ -30,4 +31,10 @@
 .titleLabel{
     @extend .titleLabel;
     color:$primaryColor;
+}
+.feedPhoto{
+    @include media("<=tablet"){
+        position: absolute;
+        opacity: 0.1;        
+    }
 }

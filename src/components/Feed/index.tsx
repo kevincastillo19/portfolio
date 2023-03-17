@@ -9,7 +9,7 @@ type props = {
 export const Feed = ({ title, caption, label }: props) => {
   return (
     <div className={styles.container}>
-      <img src={feedPhoto} alt="profile-photo"/>
+      <img className={styles.feedPhoto} src={feedPhoto} alt="profile-photo"/>
       <div className={styles.data}>
         <span className={styles.titleLabel}>{label}</span>
         <h1 className={styles.title}>{title}</h1>
