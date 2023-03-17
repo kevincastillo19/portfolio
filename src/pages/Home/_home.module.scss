@@ -67,9 +67,10 @@
 .badgeRectangle{
     display:flex;
     flex-direction:column;
-    @include media("<=phone"){
+    @include media("<=tablet"){
         width: 90%;
         box-sizing: border-box;
+        margin:1rem
     }
 }
 .badgeRectangle > * {
@@ -93,7 +94,7 @@
     width: 60%;
     position: relative;
     @include media("<=tablet"){
-        // margin: auto;
+        width: 90%;
     }
 }
 .featuredTitle{
