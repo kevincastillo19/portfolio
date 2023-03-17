@@ -9,15 +9,15 @@ export const navbarOptions = {
         },
         {
             name:"Projects",
-            url:"#projects"
+            url:"/#projects"
         },
         {
             name:"About",
-            url:"#about"
+            url:"/#about"
         },
         {
             name:"Contact",
-            url:"#contact"
+            url:"/#contact"
         }
     ]
 }

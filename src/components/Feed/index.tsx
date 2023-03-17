@@ -5,8 +5,9 @@ type props = {
   title: string;
   caption: string;
   label?: string;
+  buttonAction: () => void;
 };
-export const Feed = ({ title, caption, label }: props) => {
+export const Feed = ({ title, caption, label, buttonAction}: props) => {
   return (
     <div className={styles.container}>
       <img className={styles.feedPhoto} src={feedPhoto} alt="profile-photo"/>
@@ -14,7 +15,7 @@ export const Feed = ({ title, caption, label }: props) => {
         <span className={styles.titleLabel}>{label}</span>
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.caption}>{caption}</p>
-        <Button text="About me" type="primary" action={()=>{console.log("abbout me")}} />
+        <Button text="About me" type="primary" action={buttonAction} />
       </div>
     </div>
   );

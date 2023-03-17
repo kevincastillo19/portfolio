@@ -2,7 +2,7 @@
 @import '../../theme/colors.scss';
 @import '../../theme/breakpoints.scss';
 
-.nav{    
+.nav{        
     width: 100%;
     padding:1rem 0;
     margin:auto;
@@ -22,6 +22,7 @@
 .nav .menuOptions{
     display:flex;
     justify-content:space-between;
+    z-index: 5;
 }
 .nav .menuOptions a > span {
     padding:1rem;

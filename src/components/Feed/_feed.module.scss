@@ -24,8 +24,8 @@
     max-width:573px;
     max-height:272px;
     @include media("<=tablet"){
-        // margin-left:0rem;
         margin:auto;
+        z-index: 2;
     }
 }
 .titleLabel{
@@ -35,6 +35,6 @@
 .feedPhoto{
     @include media("<=tablet"){
         position: absolute;
-        opacity: 0.1;        
+        opacity: 0.1;
     }
 }

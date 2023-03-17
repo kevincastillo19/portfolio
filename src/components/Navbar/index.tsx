@@ -21,7 +21,6 @@ export const Navbar = ({image, options}:NavbarInterface) => {
                     </Link>
                 ))
             }
-            <i className={`fa fa-bars`} aria-hidden="true"></i>
         </div>
     </nav>
   )

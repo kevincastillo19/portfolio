@@ -20,6 +20,7 @@ export const Home = () => {
                 label="Hello I'm Kevin Castillo"
                 title="Software Developer"
                 caption={CAPTION_TEXT}
+                buttonAction={console.log("about yess")}
             />
             <section id="about" className={styles.container}>
                 <div className={styles.graySquare} />
