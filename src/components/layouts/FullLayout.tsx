@@ -11,8 +11,7 @@ export const FullLayout = ({children}:props) => {
 
   return (
     <div className={styles.mainFrame}>       
-        {children}
-      <Navbar options={navbarOptions.options} />
+        {children}      
     </div>
   );
 };

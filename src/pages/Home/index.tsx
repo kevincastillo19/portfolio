@@ -157,6 +157,7 @@ export const Home = () => {
                     buttonAction={() => console.log('contact')}
                 />
             </section>
+            <Navbar options={homeOptions} />
         </>
     )
 }
