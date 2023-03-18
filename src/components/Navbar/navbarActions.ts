@@ -1,23 +1,24 @@
-import LogoKC from "../../assets/img/Logo_kc_blanco.png";
+import LogoKC from '../../assets/img/Logo_kc_blanco.png'
+
 
 export const navbarOptions = {
-    image:LogoKC,
-    options:[
+    image: LogoKC,
+    options: [
         {
-            name:"Home",
-            url:"/"
+            name: 'Home',
+            url: '/',            
         },
         {
-            name:"Projects",
-            url:"/#projects"
+            name: 'Projects',
+            url: '/#projects',            
         },
         {
-            name:"About",
-            url:"/#about"
+            name: 'About',
+            url: '/#about',            
         },
         {
-            name:"Contact",
-            url:"/#contact"
-        }
-    ]
+            name: 'Contact',
+            url: '/#contact',            
+        },
+    ],
 }

@@ -1,3 +1,4 @@
+
 export interface NavbarInterface {
     image?:string,
     options:NavItem[]
@@ -6,6 +7,6 @@ export interface NavbarInterface {
 type NavItem = {
     id?:string | number
     name:string
-    action?:void
-    url:string
+    action?:()=>void
+    url:string,
 }

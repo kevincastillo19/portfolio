@@ -19,7 +19,11 @@ export const Navbar = ({ image, options }: NavbarInterface) => {
             )}
             <div className={styles.menuOptions}>
                 {options.map((option) => (
-                    <Link to={option.url} key={option.url}>
+                    <Link
+                        to={option.url}
+                        key={option.url}
+                        onClick={option?.action}
+                    >
                         <span data-content={option.name}>{option.name}</span>
                     </Link>
                 ))}

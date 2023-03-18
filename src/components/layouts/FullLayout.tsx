@@ -7,13 +7,12 @@ type props = {
     children: JSX.Element
 }
 
-export const FullLayout = ({children}:props) => {
+export const FullLayout = ({children}:props) => {  
+
   return (
-    <div className={styles.mainFrame}>
-      <Navbar image={navbarOptions.image} options={navbarOptions.options} />
+    <div className={styles.mainFrame}>       
         {children}
       <Navbar options={navbarOptions.options} />
-      {/* <Footer/> */}
     </div>
   );
 };
