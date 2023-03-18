@@ -90,7 +90,7 @@ export const Home = () => {
                         icon={ruleIcon}
                         color="gray"
                         title="Branding"
-                        caption="I have experience with UX/UI Design, Let’s start to make a new unicorn."
+                        caption="I’m working to create all envirorment for your product."
                         buttonText="Know more"
                         buttonAction={() => console.log('know more branding')}
                     />
