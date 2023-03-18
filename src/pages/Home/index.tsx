@@ -1,3 +1,4 @@
+import { useRef, MutableRefObject} from 'react'
 import { Feed } from '../../components/Feed'
 import { Card } from '../../components/Card'
 import { CardSquare } from '../../components/CardSquare'
@@ -11,6 +12,37 @@ import { ImageProject } from '../../utils/ImageProject';
 import { Banner } from '../../components/Banner'
 
 export const Home = () => {
+
+    const scrollRef = {
+        homeRef: useRef<HTMLHeadingElement>(null),
+        aboutRef: useRef<HTMLHeadingElement>(null),
+        projectsRef: useRef<HTMLHeadingElement>(null),
+        contactRef: useRef<HTMLHeadingElement>(null),
+    }    
+    const scrollToSection = (section:string) => {
+        const scrollArgs:ScrollIntoViewOptions = {
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'start'
+          }
+        switch (section) {
+            case 'home':
+                scrollRef.homeRef.current?.scrollIntoView(scrollArgs)
+                break;
+            case 'about':
+                scrollRef.aboutRef.current?.scrollIntoView(scrollArgs)
+                break;
+            case 'projects':
+                scrollRef.projectsRef.current?.scrollIntoView(scrollArgs)
+                break;
+            case 'contact':
+                scrollRef.contactRef.current?.scrollIntoView(scrollArgs)
+                break;
+            default:
+                break;
+        }
+    }
+
     const CAPTION_TEXT =
         "I'm a System engineer with more than three years of experience in Software development, currently I'm working as a Fullstack developer. In addition to this, I have experience in the graphic design area, such as Design UX/UI and others."
 
@@ -20,12 +52,12 @@ export const Home = () => {
                 label="Hello I'm Kevin Castillo"
                 title="Software Developer"
                 caption={CAPTION_TEXT}
-                buttonAction={console.log("about yess")}
+                buttonAction={()=> scrollToSection('about')}
             />
             <section id="about" className={styles.container}>
                 <div className={styles.graySquare} />
                 <div className={styles.blackSquare} />
-                <article className={styles.cardsFrame}>
+                <article ref={scrollRef.aboutRef} className={styles.cardsFrame}>
                   <Card
                       icon={laptopIcon}
                       color="gray"
