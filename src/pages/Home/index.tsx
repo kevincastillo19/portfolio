@@ -1,4 +1,4 @@
-import { useRef, MutableRefObject, RefObject } from 'react'
+import { useRef } from 'react'
 import { Feed } from '../../components/Feed'
 import { Card } from '../../components/Card'
 import { CardSquare } from '../../components/CardSquare'
@@ -12,11 +12,17 @@ import { ImageProject } from '../../utils/ImageProject'
 import { Banner } from '../../components/Banner'
 import { Navbar } from '../../components/Navbar/';
 import { navbarOptions } from "../../components/Navbar/navbarActions";
+import projects from "../../shared/projects.json"
+import { Project } from '../../interfaces/Project.d'
+import { useNavigate } from 'react-router-dom'
 
-// hooks 🦉}
+// hooks 🦉
 import useScroll from '../../hooks/useScroll'
 
 export const Home = () => {
+
+    const navigate = useNavigate()
+
     const CAPTION_TEXT =
         "I'm a System engineer with more than three years of experience in Software development, currently I'm working as a Fullstack developer. In addition to this, I have experience in the graphic design area, such as Design UX/UI and others."
 
@@ -50,6 +56,20 @@ export const Home = () => {
             action: ()=>scrollTo(scrollRef.contactRef),
         },
     ]
+
+    const renderProjects = () => {
+        const projectList:Project[] = projects as Array<Project>
+        return projectList.map(project => (
+            <Slide
+                key={project.id}
+                image={ImageProject(project.image)}
+                title={project.title}
+                buttonText="KNOW MORE"
+                buttonAction={() => navigate(`/project/${project.id}`)}
+            />
+        ))
+    }
+    
 
 
     return (
@@ -122,30 +142,8 @@ export const Home = () => {
                     <button className={'button-primary'}>view all</button>
                 </div>
                 <article id="projects" className={styles.projects}>
-                    <Slide
-                        image={ImageProject('biowel')}
-                        title="Biowel ERP"
-                        buttonText="KNOW MORE"
-                        buttonAction={() => console.log('biowel')}
-                    />
-                    <Slide
-                        image={ImageProject('smarket')}
-                        title="Smarket"
-                        buttonText="KNOW MORE"
-                        buttonAction={() => console.log('smarket')}
-                    />
-                    <Slide
-                        image={ImageProject('laguaca')}
-                        title="La Guaca"
-                        buttonText="KNOW MORE"
-                        buttonAction={() => console.log('guaca')}
-                    />
-                    <Slide
-                        image={ImageProject('vpocket')}
-                        title="VPOCKET"
-                        buttonText="KNOW MORE"
-                        buttonAction={() => console.log('vpocket')}
-                    />
+                    {/* Render projects mapping */}
+                    {renderProjects()}                    
                 </article>
             </section>
             <div className={styles.grayRectangle}></div>
