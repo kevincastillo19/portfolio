@@ -1,57 +1,21 @@
-@import '../../theme/colors.scss';
-@import '../../theme/breakpoints.scss';
+@import "../../theme/colors.scss";
+@import "../../theme/fonts.scss";
+@import "../../theme/breakpoints.scss";
 
-.badgeContainer{
-    box-sizing: border-box;
-    padding:0 3rem;
-    background:$primaryGray;
-    max-width:361px;
-    max-height:137px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-content:center;
-    width:22.5em;
-    height:8.5em;
-    @include media ("<=tablet"){
-        height:8.5rem;
-        margin: 0.5rem;
-        padding:0;
-    }
-    @include media ("<=phone"){
-        height:8.5rem;
-        padding:0;
-        margin: 0.5rem;
-    }
-
-}
-
-.badgeContainer:hover{
-    box-shadow: 0px 0px 20px 1px $primaryColorTenue;
-    transition: all .5s ease-in-out;
-    cursor:pointer;
-}
-
-.badgeContainer .badgeBigText{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
-    /* identical to box height */
-    text-align: center; 
-    color:$primaryColor;
-    margin:0;
-    
-}
-.badgeContainer .badgeLabel{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 20px;
+.badgeRed{
+    padding: 0.6rem 1rem;
+    border: 1.5px solid $primaryColor;
+    font-weight:600 ;
     text-align: center;
-    color: $white;
-    margin:0;
+    align-items: center;
+    letter-spacing: 0.007em;
+    font-size: 1rem;
+    border-radius: 3.75px;
+    color: $primaryColor;
+    &:hover{
+        cursor: pointer;
+        background-color: $primaryColor;
+        color: $white;
+        transition: all ease-in-out 0.3s;
+    }
 }
-

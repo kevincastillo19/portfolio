@@ -1,13 +1,15 @@
-import styles from './_badge.module.scss';
+import styles from './_badge.module.scss'
 
-type props ={
-    bigText:string,
-    label:string
+type props = {
+    text:string
 }
 
-export const Badge = ({bigText, label}:props) => (
-    <div className={styles.badgeContainer}>
-        <h4 className={styles.badgeBigText}>{bigText}</h4>
-        <span className={styles.badgeLabel}>{label}</span>
-    </div>
-)
+export const Badge = ({text}:props) => {
+  return (
+    <>
+        <div className={styles.badgeRed}>
+            <span>{text}</span>
+        </div>
+    </>
+  )
+}

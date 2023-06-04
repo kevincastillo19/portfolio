@@ -1,0 +1,8 @@
+@import "../../theme/colors.scss";
+@import "../../theme/fonts.scss";
+@import "../../theme/breakpoints.scss";
+
+.container{
+    height: 100vh;
+    background-color: $darkGray;
+}

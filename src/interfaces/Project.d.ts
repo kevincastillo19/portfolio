@@ -3,5 +3,6 @@ export interface Project {
     title:string,
     description:string,
     image:string,
-    mobile:boolean
+    mobile:boolean,
+    technologies:Array<string>
 }

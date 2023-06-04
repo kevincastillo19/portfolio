@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { Feed } from '../../components/Feed'
 import { Card } from '../../components/Card'
 import { CardSquare } from '../../components/CardSquare'
-import { Badge } from '../../components/Badge'
+import { BadgeCard } from '../../components/BadgeCard'
 import styles from './_home.module.scss'
 import laptopIcon from '../../assets/img/icons/laptop-icon.svg'
 import tabletIcon from '../../assets/img/icons/tablet-icon.svg'
@@ -119,15 +119,15 @@ export const Home = () => {
                     <CardSquare bigText={'3+'} label={'Years Experience'} />
                     <div className={styles.badgeRectangle}>
                         <div className={styles.badgeRow}>
-                            <Badge bigText={'6'} label={'Clients'} />
-                            <Badge bigText={'10+'} label={'Technologies'} />
+                            <BadgeCard bigText={'6'} label={'Clients'} />
+                            <BadgeCard bigText={'10+'} label={'Technologies'} />
                         </div>
                         <div className={styles.badgeRow}>
-                            <Badge
+                            <BadgeCard
                                 bigText={'12+'}
                                 label={'Completed projects'}
                             />
-                            <Badge bigText={'16+'} label={'Achievements'} />
+                            <BadgeCard bigText={'16+'} label={'Achievements'} />
                         </div>
                     </div>
                 </article>

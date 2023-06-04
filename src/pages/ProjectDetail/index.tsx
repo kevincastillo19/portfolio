@@ -1,26 +1,71 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { Project } from '../../interfaces/Project.d'
-import projects from "../../shared/projects.json"
+import projects from '../../shared/projects.json'
+import { FeedProject } from '../../components/Feed/feedProject'
+import { Navbar } from '../../components/Navbar'
+import { navbarOptions } from '../../components/Navbar/navbarActions'
+import styles from './_projectDetail.module.scss';
+
 export const ProjectDetail = () => {
-
     const { id } = useParams()
-    const [project, setProject] = useState<Project>()
+    const [project, setProject] = useState<Project | undefined>({
+        id: 0,
+        title: '',
+        description: '',
+        image: '',
+        mobile: false,
+        technologies: [],
+    })
+    
+    const homeOptions = [
+        {
+            name: 'Home',
+            url: '/',
+            action: ()=> {},
+        },
+        {
+            name: 'Projects',
+            url: '/#projects',
+            action: ()=> {},
+        },
+        {
+            name: 'About',
+            url: '/#about',
+            action: ()=> {},
+        },
+        {
+            name: 'Contact',
+            url: '/#contact',
+            action: ()=> {},
+        },
+    ]
 
-    const getProjectDetail = (id:number) => {
-        const projectList:Project[] = projects as Array<Project>
-        const selectedProject = projectList.find(project => project.id === id)
+
+    const getProjectDetail = (id: number) => {
+        const projectList: Project[] = projects as Array<Project>
+        const selectedProject = projectList.find((project) => project.id === id)
         setProject(selectedProject)
         console.log(selectedProject, 'selectedProject')
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         getProjectDetail(Number(id))
-    },[id])
+    }, [id])
 
     return (
-        <>
-            <h1>Project Detail {id}</h1>
-        </>
+        <div className={styles.container}>
+         <Navbar
+                image={navbarOptions.image}
+                options={homeOptions}
+            />
+            <FeedProject 
+                title={project?.title ?? ''}
+                caption={project?.description ?? ''}
+                label={project?.mobile ? 'Web App' : 'Web App & Mobile'}
+                image={project?.image || ''}
+                technologies={project?.technologies || []}
+            />
+        </div>
     )
 }

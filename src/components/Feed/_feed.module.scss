@@ -28,11 +28,20 @@
         z-index: 2;
     }
 }
+
+.title{
+    @extend .title;
+    color:$primaryColor;
+}
 .titleLabel{
     @extend .titleLabel;
     color:$primaryColor;
 }
 .feedPhoto{
+    // width: 50%;
+    // position: relative;
+    // right: 0;
+    // top: 0;
     @include media("<=tablet"){
         position: absolute;
         opacity: 0.1;
@@ -43,4 +52,28 @@
         opacity: 0.1;
         width: 100%;
     }
+}
+.containerMockup{
+    position: relative;
+    width: 50%;
+}
+.feedPhotoProject{
+    position: absolute;
+    bottom: 8.2rem;
+    left:7.5%;
+    width: 21rem;
+    transform: rotate(-2deg) skewY(-1deg);    
+}
+
+.feedPhotoPhoneMockup{
+        position: absolute;
+        bottom: 10rem;
+        width: 13rem;
+    }
+
+.technologiesContainer{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
