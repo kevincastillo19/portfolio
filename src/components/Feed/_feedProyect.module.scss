@@ -40,10 +40,16 @@
 }
 
 .technologiesContainer{
-    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    & > * {
+        margin-top: 0.8rem;
+        margin-right:0.8rem;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
 }
 .webMockup{
     position: relative;

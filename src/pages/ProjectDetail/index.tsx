@@ -46,7 +46,6 @@ export const ProjectDetail = () => {
         const projectList: Project[] = projects as Array<Project>
         const selectedProject = projectList.find((project) => project.id === id)
         setProject(selectedProject)
-        console.log(selectedProject, 'selectedProject')
     }
 
     useEffect(() => {
@@ -68,7 +67,7 @@ export const ProjectDetail = () => {
                     title="Let’s work together on yout next project"
                     caption="Get in touch to start working together and develop this new business idea."
                     buttonText="contact"
-                    buttonAction={() => console.log('contact')}
+                    buttonAction={() => alert('coming soon')}
                 />
             </section>
             <div className="bottomGrayRectangle"></div>
