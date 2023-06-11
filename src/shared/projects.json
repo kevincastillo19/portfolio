@@ -2,7 +2,7 @@
     {
         "id":1,
         "title":"Biowel",
-        "description":"Sofware de gestión empresarial de recursos. El ecosistema Biowel consiste en múltiples módulos independientes que se integran entre sí para formar una aplicación robusta capaz de mantener la información centralizada de cierta forma. Esta aplicación web consta de una arquitectura de microservicios orquestados entre sí, donde se utilizan diferentes tecnologías; tales como Python con Flask, React JS, PHP y Servicios de AWS.",
+        "description":"Sofware de gestión empresarial de recursos. El ecosistema Biowel consiste en múltiples módulos independientes que se integran entre sí para formar una aplicación robusta capaz de mantener la información centralizada de cierta forma. Esta aplicación web consta de una arquitectura de microservicios orquestados entre sí, donde se utilizan diferentes tecnologías; tales como Python con Flask, React JS, PHP y Servicios de AWS. Mi aporte sobre este desarrollo implica desarrollo en frontend, backend, modelado de datos, despliegues e implementación de CI/CD.",
         "image":"biowel",
         "mobile":false,
         "technologies":["Python", "Flask", "React js", "PHP",  "EC2 AWS","S3 AWS","Stored procedure", "Bitbucket Pipelines", "Payment Gateway"]
