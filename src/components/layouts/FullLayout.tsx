@@ -1,5 +1,3 @@
-import { Navbar } from "../Navbar";
-import { navbarOptions } from "../Navbar/navbarActions";
 import styles from "./_fullLayout.module.scss"
 // import {Footer} from "../Footer"
 

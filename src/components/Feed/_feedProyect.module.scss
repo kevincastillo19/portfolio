@@ -4,11 +4,13 @@
 
 .container{
     z-index:1;
-    padding-top:5rem;
+    padding-top:3rem;
     display:flex;
     background:$darkGray;
     justify-content:center;
     position: relative;
+    overflow: hidden;    
+    margin: 1rem;
     @include media("<=tablet"){
         padding:3rem;
         flex-direction: column;
@@ -17,6 +19,7 @@
         padding:0rem;
     }
 }
+
 .data{
     align-self: center;
     display:flex;
@@ -24,32 +27,30 @@
     text-align:justify;
     padding:1rem;
     max-width:573px;
-    max-height:272px;
+    // max-height:272px;
     @include media("<=tablet"){
         margin:auto;
         z-index: 2;
     }
 }
 
-.titleLabel{
-    @extend .titleLabel;
+.title{
+    @extend .title;
     color:$primaryColor;
 }
-.feedPhoto{
-    // width: 50%;
-    // position: relative;
-    // right: 0;
-    // top: 0;
-    @include media("<=tablet"){
-        position: absolute;
-        opacity: 0.1;
-        right: 0;
-    }
-    @include media("<=phone"){
-        position: absolute;
-        opacity: 0.1;
-        width: 100%;
-    }
+
+.technologiesContainer{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-
+.webMockup{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url('../../assets/img/mockups/laptop-mockup.png');
+    background-repeat: no-repeat;
+    background-size: contain;    
+    
+}
