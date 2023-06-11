@@ -2,7 +2,7 @@
     {
         "id":1,
         "title":"Biowel",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description":"Sofware de gestión empresarial de recursos. El ecosistema Biowel consiste en múltiples módulos independientes que se integran entre sí para formar una aplicación robusta capaz de mantener la información centralizada de cierta forma. Esta aplicación web consta de una arquitectura de microservicios orquestados entre sí, donde se utilizan diferentes tecnologías; tales como Python con Flask, React JS, PHP y Servicios de AWS.",
         "image":"biowel",
         "mobile":false,
         "technologies":["Python", "Flask", "React js", "PHP",  "EC2 AWS","S3 AWS","Stored procedure", "Bitbucket Pipelines", "Payment Gateway"]
@@ -10,7 +10,7 @@
     {
         "id":2,
         "title":"Smarket",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description":"Smarket es una aplicación de administración de inventario y ventas para tiendas regido al sistema de Chile. La Wep app se desarrolló sobre React JS y utiliza diferentes componentes como son Sockets y servicios de AWS para almacenado de archivos. Además de despliegues sobre Netlify.",
         "image":"smarket",
         "mobile":true,
         "technologies":["Node js", "React js", "Netlify", "S3 AWS", "SocketIO"]
@@ -18,7 +18,7 @@
     {
         "id":3,
         "title":"La Guaca",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description":"La Guaca es un e-commerce de una joyería hecho en Shopify donde se hizo el desarrollo de las diferentes páginas de él mismo con formulario de contacto y demás; utilizando tecnologías tales como Liquid, HTML, CSS y JavaScript. Todo esto personalizando el tema que eligió el cliente.",
         "image":"laguaca",
         "mobile":true,
         "technologies":["Shopify", "Liquid", "JavaScript", "HTML5", "CSS3"]
@@ -26,7 +26,7 @@
     {
         "id":4,
         "title":"VPOCKET",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description":"Vpocket es una Web app desarrollada en React JS y del lado del backend se implementó un monolito con Flask, mi aporte sobre esta aplicación fue como desarrollador FullStack aportando en el desarrollo de interfaces y acciones del lado del usuario como desarrollando las diferentes API's sobre las que se basa la lógica de negocio. Esta app busca manejar el control de gastos de diferentes tarjetas de crédito por usuario y arrojar reportes de manera general, adicionando un control por permisos de cada usuario.",
         "image":"vpocket",
         "mobile":true,
         "technologies":["Python", "Flask", "React js", "AWS"]
