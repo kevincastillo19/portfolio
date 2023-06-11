@@ -1,6 +1,9 @@
 import styles from './_feedProyect.module.scss'
 import { Badge } from '../Badge'
 import '../../theme/utils.scss'
+import WebViewer from '../layouts/WebViewer'
+import { ImageProject } from '../../utils/ImageProject';
+
 type props = {
     title: string
     caption: string
@@ -26,6 +29,7 @@ export const FeedProject = ({ title, caption, image, technologies }: props) => {
                         {renderTechnologies()}
                     </div>
                 </div>
+                <WebViewer image={ImageProject(image)}/>
             </div>
         </>
     )

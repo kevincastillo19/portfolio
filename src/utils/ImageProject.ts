@@ -3,6 +3,7 @@ import smarketImage from '../assets/img/projects/smarket.png'
 import smarketx2Image from '../assets/img/projects/smarketx2.png'
 import vpocketImage from '../assets/img/projects/vpocket.png'
 import laguacaImage from '../assets/img/projects/laguaca.png'
+import gaming from '../assets/img/projects/gaming.jpg'
 
 export const ImageProject = (project: string, set?:boolean) => {
     switch (project) {
@@ -18,6 +19,9 @@ export const ImageProject = (project: string, set?:boolean) => {
         case 'laguaca':
             if (set) return `${laguacaImage} 1x, ${laguacaImage} 2x, ${laguacaImage} 3x`
             return laguacaImage
+        case 'gaming':
+            if (set) return `${gaming} 1x, ${gaming} 2x, ${gaming} 3x`
+            return gaming
         default:
             return biowelImage
     }
