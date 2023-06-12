@@ -4,5 +4,6 @@ export interface Project {
     description:string,
     image:string,
     mobile:boolean,
+    theme:'white' | 'dark',
     technologies:Array<string>
 }

@@ -12,7 +12,7 @@
     overflow: hidden;    
     margin: 1rem;
     @include media("<=tablet"){
-        padding:3rem;
+        // padding:3rem;
         flex-direction: column;
     }
     @include media("<=phone"){

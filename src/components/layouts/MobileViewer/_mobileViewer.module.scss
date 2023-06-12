@@ -1,0 +1,84 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/fonts.scss";
+@import "../../../theme/breakpoints.scss";
+
+.container {
+    display: block;
+    padding:0 1rem;
+    margin: 1rem auto;
+    height: 40rem;
+    width: 90%;
+    max-width: 90%;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+.body{
+    position: absolute;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 top;
+}
+.notch{
+    height: 1.25rem;
+    width: 7rem;
+    border-radius: 10px;
+}
+.mobileNavbar{
+    position: relative;
+    z-index: 2;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerLight{
+    @extend .container;
+    background: $darkBrowser;    
+    position: relative;
+    @include media(">phone"){
+        display: none;
+    }
+    & > .mobileNavbar{
+        @extend .mobileNavbar;
+        & > span {
+            font-weight: 500;
+            color: $darkBrowser;
+        }
+        & > .notch{
+            height: 1.25rem;
+            width: 7rem;
+            border-radius: 10px;            
+            background: $darkBrowser;
+        }
+        & > .mobileIcons{
+            transform: scale(1.5);
+        }
+    }
+}
+
+.containerDark{
+    @extend .container;
+    background: $darkBrowser;    
+    position: relative;
+    @include media(">phone"){
+        display: none;
+    }
+    & > .mobileNavbar{      
+            @extend .mobileNavbar;  
+            & > span {
+                font-weight: 500;
+                color: $white;
+            }
+            & > .notch{
+                @extend .notch;
+                background: gray;
+            }        
+        }
+}
+

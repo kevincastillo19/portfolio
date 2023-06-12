@@ -3,21 +3,25 @@ import { Badge } from '../Badge'
 import '../../theme/utils.scss'
 import WebViewer from '../layouts/WebViewer'
 import { useImageProject } from '../../hooks/useImageProject';
+import MobileViewer from '../layouts/MobileViewer';
 
 type props = {
     title: string
     caption: string
     label?: string
     image: string
+    mobileImage: string
+    theme:'white' | 'dark'
     technologies: Array<string>
 }
-export const FeedProject = ({ title, caption, image, technologies }: props) => {
+export const FeedProject = ({ title, caption, image, mobileImage, theme, technologies  }: props) => {
     const renderTechnologies = () => {
         return technologies.map((tech) => (
             <Badge key={`tech${tech}`} text={tech} />
         ))
     }
     const {image:imagePath, loading} = useImageProject(image)
+    const {image:imageMobile, loading:loadingMobile} = useImageProject(mobileImage)
 
     return (
         <>
@@ -31,6 +35,7 @@ export const FeedProject = ({ title, caption, image, technologies }: props) => {
                     </div>
                 </div>
                 <WebViewer image={imagePath} loading={loading}/>
+                <MobileViewer image={imageMobile} theme={theme} loading={loadingMobile}/>
             </div>
         </>
     )

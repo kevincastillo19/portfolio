@@ -16,6 +16,7 @@ export const ProjectDetail = () => {
         description: '',
         image: '',
         mobile: false,
+        theme: 'white',
         technologies: [],
     })
 
@@ -51,6 +52,7 @@ export const ProjectDetail = () => {
     useEffect(() => {
         if(id)
             getProjectDetail(Number(id))
+            window.scrollTo(0,0)
     }, [id])
 
     return (
@@ -61,6 +63,8 @@ export const ProjectDetail = () => {
                 caption={project?.description ?? ''}
                 label={project?.mobile ? 'Web App' : 'Web App & Mobile'}
                 image={`${project?.image}x2` || ''}
+                mobileImage={`${project?.image}mobile` || ''}
+                theme={project?.theme || 'white'}
                 technologies={project?.technologies || []}
             />
             <section id="contact" className={styles.contactBanner}>
