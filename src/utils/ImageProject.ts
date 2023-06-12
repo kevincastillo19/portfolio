@@ -3,9 +3,10 @@ import smarketImage from '../assets/img/projects/smarket.png'
 import smarketx2Image from '../assets/img/projects/smarketx2.png'
 import vpocketImage from '../assets/img/projects/vpocket.png'
 import laguacaImage from '../assets/img/projects/laguaca.png'
+import { IMAGES_PROJECTS_DIR } from './constants'
 
 export const ImageProject = (project: string, set?:boolean) => {
-    const imagePath = `/src/assets/img/projects/${project}`
+    const imagePath = `${IMAGES_PROJECTS_DIR}/${project}`
     switch (project) {
         case 'biowel':
             if (set) return `${biowelImage} 1x, ${biowelImage} 2x, ${biowelImage} 3x`

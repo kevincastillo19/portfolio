@@ -1,0 +1,1 @@
+export const IMAGES_PROJECTS_DIR = import.meta.env.VITE_IMAGES_PROJECTS_DIR
