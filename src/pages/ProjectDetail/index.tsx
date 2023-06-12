@@ -49,7 +49,8 @@ export const ProjectDetail = () => {
     }
 
     useEffect(() => {
-        getProjectDetail(Number(id))
+        if(id)
+            getProjectDetail(Number(id))
     }, [id])
 
     return (
@@ -59,7 +60,7 @@ export const ProjectDetail = () => {
                 title={project?.title ?? ''}
                 caption={project?.description ?? ''}
                 label={project?.mobile ? 'Web App' : 'Web App & Mobile'}
-                image={`${project?.image}x2.png` || ''}
+                image={`${project?.image}x2` || ''}
                 technologies={project?.technologies || []}
             />
             <section id="contact" className={styles.contactBanner}>

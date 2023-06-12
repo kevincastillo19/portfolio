@@ -8,7 +8,7 @@ import laptopIcon from '../../assets/img/icons/laptop-icon.svg'
 import tabletIcon from '../../assets/img/icons/tablet-icon.svg'
 import ruleIcon from '../../assets/img/icons/rule-icon.svg'
 import { Slide } from '../../components/Slide/index'
-import { ImageProject } from '../../utils/ImageProject'
+import { useImageProject } from '../../hooks/useImageProject'
 import { Banner } from '../../components/Banner'
 import { Navbar } from '../../components/Navbar/';
 import { navbarOptions } from "../../components/Navbar/navbarActions";
@@ -59,15 +59,18 @@ export const Home = () => {
 
     const renderProjects = () => {
         const projectList:Project[] = projects as Array<Project>
-        return projectList.map(project => (
-            <Slide
-                key={project.id}
-                image={ImageProject(project.image)}
-                title={project.title}
-                buttonText="KNOW MORE"
-                buttonAction={() => navigate(`/project/${project.id}`)}
-            />
-        ))
+        return projectList.map(project => {
+            const { image } = useImageProject(project.image)
+            return (
+                <Slide
+                    key={project.id}
+                    image={image}
+                    title={project.title}
+                    buttonText="KNOW MORE"
+                    buttonAction={() => navigate(`/project/${project.id}`)}
+                />
+            )
+        })
     }
     
 

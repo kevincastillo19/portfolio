@@ -2,7 +2,7 @@ import styles from './_feedProyect.module.scss'
 import { Badge } from '../Badge'
 import '../../theme/utils.scss'
 import WebViewer from '../layouts/WebViewer'
-import { ImageProject } from '../../utils/ImageProject';
+import { useImageProject } from '../../hooks/useImageProject';
 
 type props = {
     title: string
@@ -16,7 +16,8 @@ export const FeedProject = ({ title, caption, image, technologies }: props) => {
         return technologies.map((tech) => (
             <Badge key={`tech${tech}`} text={tech} />
         ))
-        }
+    }
+    const {image:imagePath, loading} = useImageProject(image)
 
     return (
         <>
@@ -29,7 +30,7 @@ export const FeedProject = ({ title, caption, image, technologies }: props) => {
                         {renderTechnologies()}
                     </div>
                 </div>
-                <WebViewer image={ImageProject(image)}/>
+                <WebViewer image={imagePath} loading={loading}/>
             </div>
         </>
     )
