@@ -59,7 +59,7 @@ export const ProjectDetail = () => {
                 title={project?.title ?? ''}
                 caption={project?.description ?? ''}
                 label={project?.mobile ? 'Web App' : 'Web App & Mobile'}
-                image={project?.image || ''}
+                image={`${project?.image}x2.png` || ''}
                 technologies={project?.technologies || []}
             />
             <section id="contact" className={styles.contactBanner}>
