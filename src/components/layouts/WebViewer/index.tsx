@@ -3,10 +3,11 @@ import styles from './_webviewer.module.scss'
 
 type props = {
     image:string
-    loading:boolean
+    loading:boolean,
+    url?:string
 }
 
-const WebViewer = ({image, loading}:props) => {
+const WebViewer = ({image, loading, url}:props) => {
   return (
     <div className={styles.container}>
         <div className={styles.browserNav}>
@@ -15,11 +16,13 @@ const WebViewer = ({image, loading}:props) => {
             <div id={styles.minimizeButton} className={styles.browserAction}></div>
             <div className={styles.urlLayout}></div>
         </div>
-        <div className={styles.body} style={{backgroundImage: `url(${image})`}}>
-          { loading && (
-              <Loading/>
-          )}
-        </div>
+        <a href={url} target='_blank'>
+          <div className={styles.body} style={{backgroundImage: `url(${image})`}}>
+            { loading && (
+                <Loading/>
+            )}
+          </div>
+        </a>
     </div>
   )
 }

@@ -5,5 +5,6 @@ export interface Project {
     image:string,
     mobile:boolean,
     theme:'white' | 'dark',
+    url?:string,
     technologies:Array<string>
 }

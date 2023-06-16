@@ -11,10 +11,11 @@ type props = {
     label?: string
     image: string
     mobileImage: string
-    theme:'white' | 'dark'
+    theme:'white' | 'dark',
+    url?:string,
     technologies: Array<string>
 }
-export const FeedProject = ({ title, caption, image, mobileImage, theme, technologies  }: props) => {
+export const FeedProject = ({ title, caption, image, mobileImage, theme, technologies, url  }: props) => {
     const renderTechnologies = () => {
         return technologies.map((tech) => (
             <Badge key={`tech${tech}`} text={tech} />
@@ -34,8 +35,8 @@ export const FeedProject = ({ title, caption, image, mobileImage, theme, technol
                         {renderTechnologies()}
                     </div>
                 </div>
-                <WebViewer image={imagePath} loading={loading}/>
-                <MobileViewer image={imageMobile} theme={theme} loading={loadingMobile}/>
+                <WebViewer image={imagePath} loading={loading} url={url}/>
+                <MobileViewer image={imageMobile} theme={theme} loading={loadingMobile} url={url}/>
             </div>
         </>
     )

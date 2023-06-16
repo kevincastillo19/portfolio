@@ -18,6 +18,12 @@
     border-radius: 22.5px;
     width: 43.5rem;
     height: 29rem;
+    @include media("<=tablet"){
+        display:none;
+    }
+    @include media("<=phone"){
+        display:none;
+    }
     & > .browserNav{
         display: flex;
         justify-content: flex-start;

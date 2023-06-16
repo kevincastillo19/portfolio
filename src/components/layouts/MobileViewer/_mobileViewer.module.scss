@@ -30,11 +30,11 @@
 }
 .mobileNavbar{
     position: relative;
-    z-index: 2;
-    margin: 1rem;
+    z-index: 2;    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .containerLight{

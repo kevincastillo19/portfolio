@@ -65,6 +65,7 @@ export const ProjectDetail = () => {
                 image={`${project?.image}x2` || ''}
                 mobileImage={`${project?.image}mobile` || ''}
                 theme={project?.theme || 'white'}
+                url={project?.url}
                 technologies={project?.technologies || []}
             />
             <section id="contact" className={styles.contactBanner}>

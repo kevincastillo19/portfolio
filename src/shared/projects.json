@@ -6,6 +6,7 @@
         "image":"biowel",
         "mobile":false,
         "theme":"white",
+        "url":"https://ttn.biowel.com.co/",
         "technologies":["Python", "Flask", "React js", "PHP",  "EC2 AWS","S3 AWS","Stored procedure", "Bitbucket Pipelines", "Payment Gateway"]
     },
     {
@@ -15,6 +16,7 @@
         "image":"smarket",
         "mobile":true,
         "theme":"white",
+        "url":"https://smarket.netlify.app/",
         "technologies":["Node js", "React js", "Netlify", "S3 AWS", "SocketIO"]
     },
     {
@@ -24,6 +26,7 @@
         "image":"laguaca",
         "mobile":true,
         "theme":"white",
+        "url":"https://laguacajoyeros.com/",
         "technologies":["Shopify", "Liquid", "JavaScript", "HTML5", "CSS3"]
     },
     {
@@ -33,6 +36,7 @@
         "image":"vpocket",
         "mobile":true,
         "theme":"dark",
+        "url":"https://vpocket.work",
         "technologies":["Python", "Flask", "React js", "AWS"]
     }
 ]
