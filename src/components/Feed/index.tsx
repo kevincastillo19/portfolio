@@ -13,7 +13,9 @@ export const Feed = ({ title, caption, label, buttonAction}: props) => {
       <img className={styles.feedPhoto} src={feedPhoto} alt="profile-photo"/>
       <div className={styles.data}>
         <span className={styles.titleLabel}>{label}</span>
-        <h1 className={styles.title}>{title}</h1>
+        <div className={styles.containerTitle}>
+          <h1 className={styles.title}>{title}</h1>
+        </div>
         <p className={styles.caption}>{caption}</p>
         <Button text="About me" type="primary" action={buttonAction} />
       </div>
