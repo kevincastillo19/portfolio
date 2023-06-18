@@ -11,6 +11,11 @@
     align-items:center;
     justify-content:space-evenly;
     background-color: $darkGray;
+    @include media('<=phone'){
+        & > #logoContainer{
+            display:none;
+        }
+    }
 }
 .navCentered{
     @extend .nav;

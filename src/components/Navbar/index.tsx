@@ -6,7 +6,7 @@ export const Navbar = ({ image, options }: NavbarInterface) => {
     return (
         <nav className={`${styles.nav} ${image ? '' : styles.navCentered}`}>
             {image && (
-                <div>
+                <div id={styles.logoContainer}>
                     <Link to="/">
                         <img
                             src={image}

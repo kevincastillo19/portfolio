@@ -29,6 +29,9 @@
         margin:auto;
         z-index: 2;
     }
+    @include media("<=phone"){
+        padding:2rem;
+    }
 }
 
 .titleLabel{
