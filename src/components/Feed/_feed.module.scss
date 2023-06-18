@@ -37,13 +37,17 @@
 .titleLabel{
     @extend .titleLabel;
     color:$primaryColor;
-    animation: moveRight 1.5s ease-in-out 0s 1 normal none running;
+    @include media("<=phone"){
+        animation: moveRight 1.5s ease-in-out 0s 1 normal none running;
+    }
 }
 
 .containerTitle{
     overflow:hidden;
-    min-height: 8rem;
-    animation: growUp 2s ease-in-out 0s 1 normal none running;
+    @include media('<=phone'){
+        min-height: 8rem;
+        animation: growUp 2s ease-in-out 0s 1 normal none running;
+    }
 }
 
 
