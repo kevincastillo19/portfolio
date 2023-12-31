@@ -24,7 +24,7 @@ export const Card = ({
             {buttonText && (
                 <button
                     className={`${styles.cardButtonText} ${styles['cardButton-' + color]}`}
-                    onClick={() => buttonAction}
+                    onClick={buttonAction}
                 >
                     <span>{buttonText}</span>
                     <img
