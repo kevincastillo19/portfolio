@@ -86,7 +86,7 @@ export const Home = () => {
             <section id="home" ref={scrollRef.homeRef}>
                 <Feed
                     label="Hello I'm Kevin Castillo"
-                    title="Software Developer"
+                    title="Software Engineer"
                     caption={CAPTION_TEXT}
                     buttonAction={() => scrollTo(scrollRef.aboutRef)}
                 />
