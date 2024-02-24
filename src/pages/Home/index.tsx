@@ -26,6 +26,8 @@ export const Home = () => {
     const CAPTION_TEXT =
         "I'm a System engineer with more than three years of experience in Software Engineer, currently I'm working as a Fullstack developer. In addition to this, I have experience in the graphic design area, such as Design UX/UI and others."
 
+    const BEHANCE_URL = "https://www.behance.net/kevincastillo3"
+    
     const { scrollTo } = useScroll()
     const scrollRef = {        
         homeRef: useRef<HTMLHeadingElement>(null),
