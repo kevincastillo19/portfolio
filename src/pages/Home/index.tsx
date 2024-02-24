@@ -24,7 +24,7 @@ export const Home = () => {
     const navigate = useNavigate()
 
     const CAPTION_TEXT =
-        "I'm a System engineer with more than three years of experience in Software development, currently I'm working as a Fullstack developer. In addition to this, I have experience in the graphic design area, such as Design UX/UI and others."
+        "I'm a System engineer with more than three years of experience in Software Engineer, currently I'm working as a Fullstack developer. In addition to this, I have experience in the graphic design area, such as Design UX/UI and others."
 
     const { scrollTo } = useScroll()
     const scrollRef = {        
