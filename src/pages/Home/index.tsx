@@ -24,7 +24,7 @@ export const Home = () => {
     const navigate = useNavigate()
 
     const CAPTION_TEXT =
-        "I'm a System engineer with more than three years of experience in Software Engineer, currently I'm working as a Fullstack developer. In addition to this, I have experience in the graphic design area, such as Design UX/UI and others."
+        "With more than four years of experience in Software industry, currently I'm working as a Fullstack developer. In addition to this, I have experience in the graphic design area, such as Design UX/UI and others."
 
     const BEHANCE_URL = "https://www.behance.net/kevincastillo3"
     
@@ -121,7 +121,7 @@ export const Home = () => {
                     />
                 </article>
                 <article className={styles.badgesFrame}>
-                    <CardSquare bigText={'3+'} label={'Years Experience'} />
+                    <CardSquare bigText={'4+'} label={'Years Experience'} />
                     <div className={styles.badgeRectangle}>
                         <div className={styles.badgeRow}>
                             <BadgeCard bigText={'6'} label={'Clients'} />
