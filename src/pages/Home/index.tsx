@@ -115,7 +115,7 @@ export const Home = () => {
                         title="Branding"
                         caption="I’m working to create all envirorment for your product."
                         buttonText="Know more"
-                        buttonAction={() => console.log('know more branding')}
+                        buttonAction={() => window.open(BEHANCE_URL, "blank")}
                     />
                 </article>
                 <article className={styles.badgesFrame}>
