@@ -2,6 +2,7 @@ import {FullLayout} from "./components/layouts/FullLayout"
 import {Home} from "./pages/Home"
 import { ProjectDetail } from './pages/ProjectDetail'
 import { createBrowserRouter } from "react-router-dom";
+import Blog from "./pages/Blog";
 
 export const router = createBrowserRouter([
     {
@@ -17,6 +18,14 @@ export const router = createBrowserRouter([
         element:(
             <FullLayout>
                 <ProjectDetail/>
+            </FullLayout>
+        )
+    },
+    {
+        path:"/blog/",
+        element:(
+            <FullLayout>
+                <Blog/>
             </FullLayout>
         )
     }

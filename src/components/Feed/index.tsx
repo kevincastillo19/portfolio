@@ -5,12 +5,13 @@ type props = {
   title: string;
   caption: string;
   label?: string;
+  photo?: string; 
   buttonAction: () => void;
 };
-export const Feed = ({ title, caption, label, buttonAction}: props) => {
+export const Feed = ({ title, caption, label, buttonAction, photo}: props) => {
   return (
     <div className={styles.container}>
-      <img className={styles.feedPhoto} src={feedPhoto} alt="profile-photo"/>
+      <img className={styles.feedPhoto} src={photo ?? feedPhoto} alt="profile-photo"/>
       <div className={styles.data}>
         <span className={styles.titleLabel}>{label}</span>
         <div className={styles.containerTitle}>

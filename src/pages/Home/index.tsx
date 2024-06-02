@@ -24,7 +24,9 @@ export const Home = () => {
     const navigate = useNavigate()
 
     const CAPTION_TEXT =
-        "With more than four years of experience in Software industry, currently I'm working as a Fullstack developer. In addition to this, I have experience in the graphic design area, such as Design UX/UI and others."
+        "With more than four years of experience in Software industry,\
+        currently I'm working as a Fullstack developer. In addition to thiss,\
+         I have experience in the graphic design area, such as Design UX/UI and others."
 
     const BEHANCE_URL = "https://www.behance.net/kevincastillo3"
     
@@ -51,6 +53,11 @@ export const Home = () => {
             name: 'About',
             url: '/#about',
             action: ()=>scrollTo(scrollRef.aboutRef),
+        },
+        {
+            name: 'Blog',
+            url: '/blog',
+            action: ()=>navigate('/blog'),
         },
         {
             name: 'Contact',

@@ -14,7 +14,7 @@ export const navbarOptions = {
         },
         {
             name: 'About',
-            url: '/#about',            
+            url: '/#about',
         },
         {
             name: 'Contact',
